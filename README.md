@@ -10,7 +10,7 @@ The SVG is based on [this fiddle](https://jsfiddle.net/prafuitu/xRmGV/). Extendi
 
 ###Demo
 
-See the [demo page](https://coolsmallapps.com/timerdemo) for a working example.
+See the [demo page](http://coolsmallapps.com/timerdemo) for a working example.
 
 ##Usage
 
@@ -71,7 +71,7 @@ Add a placeholder to show the current value of the scope variable:
 <h2>Timer status: {{status}}</h2>
 ````
 
-More advanced use cases involve a `$watch` on the `$scope.status` variable, or use of `ng-class` to show different content depending on the status. The [demo page](https://coolsmallapps.com/timerdemo) shows this in action.
+More advanced use cases involve a `$watch` on the `$scope.status` variable, or use of `ng-class` to show different content depending on the status. The [demo page](http://coolsmallapps.com/timerdemo) shows this in action.
 
 ###Style
 
