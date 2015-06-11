@@ -1,0 +1,33 @@
+{
+  "name": "angular-svg-timer",
+  "version": "0.1.0",
+  "description": "An SVG-based timer button",
+  "main": "timer.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markau/angular-svg-timer.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "timer",
+    "svg",   
+    "directive"
+  ],
+  "author": "Mark Andrews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markau/angular-svg-timer/issues"
+  },
+  "homepage": "https://github.com/markau/angular-svg-timer",
+  "devDependencies": {
+    "karma": "^0.12.9",
+    "karma-jasmine": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-ng-html2js-preprocessor": "*"
+  }
+}
