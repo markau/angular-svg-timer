@@ -100,7 +100,7 @@ Being an SVG, the timer scales to fill the containing DOM element (effectively, 
 
 ##Compatability
 
-* It should work on anything that supports SVG. It has been tested on Android 4.2 and iOS 6 / 7 in a Phonegap project. 
+It should work on anything that supports SVG. It has been tested on Android 4.2 and iOS 6 / 7 in a Phonegap project. 
 
 ##License
 
