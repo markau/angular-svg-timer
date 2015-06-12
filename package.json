@@ -1,6 +1,6 @@
 {
   "name": "angular-svg-timer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An SVG-based timer button",
   "main": "timer.js",
   "scripts": {

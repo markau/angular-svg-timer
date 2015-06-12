@@ -8,11 +8,11 @@ An Angular directive to provide a self-contained, SVG-based timer button with vi
 
 The SVG is based on [this fiddle](https://jsfiddle.net/prafuitu/xRmGV/). Extending this into an Angular directive allows additional features, including the start/stop button (works with touch) and communication between the directive and the view so that timer events can be handled. 
 
-###Demo
+### Demo
 
 See the [demo page](http://timerdemo.azurewebsites.net) for a working example.
 
-##Usage
+## Usage
 
 1. Install with bower:
 
@@ -30,12 +30,12 @@ See the [demo page](http://timerdemo.azurewebsites.net) for a working example.
 
     `var App = angular.module('App', ['markau.timer']);`
 
-###Quick start
+### Quick start
 The minimal declaration is:
 
 ````<markau-timer time="20" />````
 
-###Options
+### Options
 
 The directive uses an isolate scope with 2-way binding on provided attributes, so the view can remain aware of changes in timer state. 
 
@@ -49,7 +49,7 @@ The directive exposes the following attributes:
     * \<something else\> (based on events below)
 * Events: an array of objects in the form `{ 'time': '<event>' }`. This is intended to allow the timer to check for \<event\> milestones and update the status accordingly. The one event supported so far is `{ 'time': 'half' }`; when the countdown is half way through, the status attribute changes from 'running' to 'halftime'. Other useful events may include 1/4 and 3/4 time, '10 seconds remaining' etc.
 
-###Example
+### Example
 
 Instantiate scope variables:
 
@@ -73,7 +73,7 @@ Add a placeholder to show the current value of the scope variable:
 
 More advanced use cases involve a `$watch` on the `$scope.status` variable, or use of `ng-class` to show different content depending on the status. The [demo page](http://timerdemo.azurewebsites.net) shows this in action.
 
-###Style
+### Style
 
 The directive uses an html template which exposes the `svg-container` and `svg-timer-text` classes. You can change the style on the countdown text by overriding the class:
 
@@ -82,21 +82,21 @@ The directive uses an html template which exposes the `svg-container` and `svg-t
         font-size: 42px;
     }
 
-###Size
+### Size
 
 Being an SVG, the timer scales to fill the containing DOM element (effectively, width: 100%). Place it inside a width-constrained block element to control the size of the timer.
 
-##A note on precision
+## A note on precision
 
 Counting setTimeout() intervals is an [unreliable](http://stackoverflow.com/a/985692/3003102) method of measuring time in JavaScript; a 1000ms interval is not necessarily 1000ms, up to 200-300ms, depending on the load on the client device (intervals can be blocked). 
 
 This directive follows [an approach](http://stackoverflow.com/a/29972322/3003102) of comparing the elapsed time of each setTimeout() interval against Date.now(), in order to calculate and adjust for any drift. This use of system time ensures reliable results across devices.
 
-##Compatability
+## Compatability
 
 This has been tested on Android 4.2 and iOS 6 / 7 in a Phonegap project, in addition to a variety of modern desktop browsers. 
 
-##License
+## License
 
 MIT
 
